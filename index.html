@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="Style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.js"></script>
+    <title>Home Page</title>
+</head>
+<body>
+    <header>
+        <div class="overlay"></div> <!--Create a layer between header and nav layers-->
+        <nav>
+            <h2>SHOP</h2>
+            <ul>
+                <li class="home"><a href="index.html"><ion-icon name="home-outline"></ion-icon>Home</a></li>
+                <li><a href="#">About</a></li> <!--Clicking an anchor with href="#" will move the scroll position to the top.-->
+                <li class="cart">
+                    <a href="cart.html">
+                        <ion-icon name="basket"></ion-icon>Cart<span>0</span>
+                        </a>
+                </li>        
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="image">
+            <img src="images/greycouch.jpg" alt="grey couch">
+            <h3>Grey Couch</h3>
+            <h3>$550.00</h3>
+            <a class="add-cart cart1" href="#"><ion-icon name="cart-outline"></ion-icon></a>
+            <input type="hidden" value="550" />
+        </div>
+        <div class="image">
+            <img src="images/greencouch.jpg" alt="green couch">
+            <h3>Green Couch</h3>
+            <h3>$800.00</h3>
+            <a class="add-cart cart2" href="#"><ion-icon name="cart-outline"></ion-icon></a>
+            <input type="hidden" value="800" />
+        </div>
+        <div class="image">
+            <img src="images/whitecouch.jpg" alt="white couch">
+            <h3>White Couch</h3>
+            <h3>$600.00</h3>
+            <a class="add-cart cart3" href="#"><ion-icon name="cart-outline"></ion-icon></a>
+            <input type="hidden" value="600" />
+        </div>
+        <div class="image">
+            <img src="images/bluecouch.jpg" alt="blue couch">
+            <h3>Blue Couch</h3>
+            <h3>$750.00</h3>
+            <a class="add-cart cart4" href="#"><ion-icon name="cart-outline"></ion-icon></a>
+            <input type="hidden" value="750" />
+        </div>
+        <div class="image">
+            <img src="images/browncouch.jpg" alt="brown couch">
+            <h3>Brown Couch</h3>
+            <h3>$650.00</h3>
+            <a class="add-cart cart5" href="#"><ion-icon name="cart-outline"></ion-icon></a>
+            <input type="hidden" value="650" />
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
