@@ -54,7 +54,6 @@ nav li span {
 
 li a {
     padding: 5px;
-    
     background-color: #fff;
     text-decoration: none;
     border-radius: 5px;
@@ -95,16 +94,17 @@ li a {
 
 .image {
     position: relative;
-    width: 450px;
+    width: 400px;
     height: auto;
-    margin: 80px;
+    margin: 30px;
+    margin-bottom: 50px;
 }
 
 img {
     max-width:100%;
 }
 
-.add-cart {
+.add-cart {       /*show add to cart button only when mouse hover on image */
     position: absolute;
     bottom: 0px;
     right:  0px;
@@ -114,11 +114,7 @@ img {
     text-align: center;
 }
 
-.image:hover .cart1,
-.image:hover .cart2,
-.image:hover .cart3,
-.image:hover .cart4,
-.image:hover .cart5  
+.image:hover .add-cart
 {
     opacity: 1;
     padding: 10px;
@@ -162,20 +158,19 @@ img {
 .price {
     width: 15%;
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     padding-right: 100px;
     border-bottom: 1px solid lightgrey;
 }
 
 .quantity {
-    width: 40%;
+    width: 40%;  /*same as width of basketTotalTitle*/
     border-bottom: 1px solid lightgrey;
     display: flex;
     align-items: center; 
 }
 
-.total {
+.total {   /*same as width of basketTotal*/
     width: 10%;
     border-bottom: 1px solid lightgrey;
     display: flex;
@@ -208,7 +203,6 @@ img {
     width: 100%;
     padding: 10px 0;
 }
-
 .basketTotalTitle {
     width: 40%;
 }
@@ -216,6 +210,3 @@ img {
 .basketTotal {
     width: 10%;
 }
-
-
-
